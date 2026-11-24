@@ -1,0 +1,934 @@
+
+/* ==========================================
+   OCEAN WEBSITE - LUXURY DEEP SEA
+   Modern Underwater Explorer Design
+========================================== */
+
+:root {
+    --primary: #168CCB;
+    --secondary: #55C5F5;
+    --light: #102E4D;
+    --white: #FFFFFF;
+    --dark: #F1F8FF;
+    --text: #B6CBE0;
+    --accent: #FFD18A;
+
+    --background: #06182D;
+    --card: #0B2541;
+    --border: #1C405F;
+
+    --shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode {
+    --primary: #168CCB;
+    --secondary: #55C5F5;
+    --light: #091D34;
+    --white: #061426;
+    --dark: #F1F8FF;
+    --text: #A8C1D9;
+
+    --background: #031020;
+    --card: #071C32;
+    --border: #173550;
+
+    --shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background:
+        radial-gradient(
+            circle at 80% 10%,
+            rgba(20, 100, 160, 0.12),
+            transparent 35%
+        ),
+        var(--background);
+
+    color: var(--text);
+    line-height: 1.7;
+    transition: 0.3s;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar {
+    width: 100%;
+    padding: 20px 9%;
+    background: rgba(5, 23, 43, 0.94);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    border-bottom: 1px solid rgba(100, 190, 240, 0.12);
+    backdrop-filter: blur(15px);
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.logo span {
+    color: var(--secondary);
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.navbar nav a {
+    color: #B8CCDF;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+    color: var(--secondary);
+}
+
+.theme-btn {
+    border: 1px solid var(--border);
+    background: var(--light);
+    color: white;
+    padding: 9px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.theme-btn:hover {
+    background: var(--primary);
+}
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: none;
+    color: var(--secondary);
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero {
+    min-height: 680px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 100px 10%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(2, 15, 31, 0.92),
+            rgba(3, 25, 48, 0.65),
+            rgba(3, 25, 48, 0.15)
+        ),
+        linear-gradient(
+            0deg,
+            #06182D 0%,
+            transparent 35%
+        ),
+        url("../assets/images/coral-reef.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 720px;
+    position: relative;
+    z-index: 1;
+}
+
+.eyebrow {
+    display: inline-block;
+    color: var(--secondary);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero .eyebrow {
+    color: #7BD8FF;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 76px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+    margin-bottom: 25px;
+    color: #FFFFFF;
+}
+
+.hero p {
+    max-width: 550px;
+    margin-bottom: 35px;
+    color: #D1E6F5;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.btn-primary,
+.btn-secondary,
+.btn-light {
+    display: inline-block;
+    padding: 13px 26px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: linear-gradient(
+        135deg,
+        #168CCB,
+        #35B7ED
+    );
+
+    color: white;
+    box-shadow: 0 6px 20px rgba(22, 140, 203, 0.25);
+}
+
+.btn-primary:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(22, 140, 203, 0.4);
+}
+
+.btn-secondary {
+    background: #102E4D;
+    color: #8DDCFF;
+    border: 1px solid #24577A;
+}
+
+.btn-secondary:hover {
+    background: #168CCB;
+    color: white;
+}
+
+.btn-light {
+    background: white;
+    color: #0B4770;
+}
+
+.btn-light:hover {
+    background: #BDEAFF;
+}
+
+/* ==========================================
+   SECTION
+========================================== */
+
+.section {
+    padding: 100px 9%;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 55px;
+}
+
+.section-heading h2 {
+    color: var(--dark);
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.2;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.section-heading p {
+    color: var(--text);
+    font-size: 15px;
+}
+
+/* ==========================================
+   INTRO
+========================================== */
+
+.intro-grid,
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 65px;
+}
+
+.intro-text h3 {
+    color: var(--dark);
+    font-size: 32px;
+    line-height: 1.3;
+    margin-bottom: 22px;
+}
+
+.intro-text p {
+    margin-bottom: 18px;
+    color: var(--text);
+}
+
+.intro-text .btn-secondary {
+    margin-top: 15px;
+}
+
+.intro-image,
+.about-grid img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 12px;
+
+    border: 1px solid rgba(100, 190, 240, 0.2);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+/* ==========================================
+   FEATURED AND CARD
+========================================== */
+
+.featured {
+    background:
+        linear-gradient(
+            180deg,
+            #0A2542,
+            #06182D
+        );
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.fish-card,
+.info-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+    transition: 0.35s;
+}
+
+.fish-card:hover,
+.info-card:hover {
+    transform: translateY(-8px);
+    border-color: #318DBD;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+}
+
+.fish-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.fish-card:hover img {
+    transform: scale(1.04);
+}
+
+.fish-info {
+    padding: 23px;
+    position: relative;
+}
+
+.fish-category {
+    display: inline-block;
+
+    color: #82D9FF;
+    background: rgba(22, 140, 203, 0.14);
+
+    border: 1px solid rgba(85, 197, 245, 0.2);
+
+    padding: 5px 12px;
+    border-radius: 30px;
+
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+
+    margin-bottom: 13px;
+}
+
+.fish-info h3 {
+    color: var(--dark);
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+.fish-info p {
+    font-size: 13px;
+    font-style: italic;
+    color: #91ABC3;
+}
+
+.fish-info button {
+    margin-top: 18px;
+    margin-right: 5px;
+
+    padding: 9px 14px;
+
+    border: 1px solid #24577A;
+    border-radius: 6px;
+
+    background: #102E4D;
+    color: #8DDCFF;
+
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+
+    transition: 0.3s;
+}
+
+.fish-info button:hover {
+    background: #168CCB;
+    border-color: #168CCB;
+    color: white;
+}
+
+.center {
+    text-align: center;
+    margin-top: 45px;
+}
+
+/* ==========================================
+   CONSERVATION
+========================================== */
+
+.conservation {
+    padding: 100px 10%;
+
+    background:
+        linear-gradient(
+            110deg,
+            rgba(3, 17, 35, 0.95),
+            rgba(9, 65, 104, 0.9)
+        );
+
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+
+    color: white;
+}
+
+.conservation h2 {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.conservation p {
+    max-width: 650px;
+    margin-bottom: 30px;
+    color: #C2D9EA;
+}
+
+/* ==========================================
+   PAGE BANNER
+========================================== */
+
+.page-banner {
+    padding: 100px 8%;
+    text-align: center;
+
+    background:
+        radial-gradient(
+            ellipse at center,
+            rgba(24, 115, 171, 0.25),
+            transparent 70%
+        ),
+        #081F38;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.page-banner h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    color: var(--dark);
+    letter-spacing: -1px;
+}
+
+.page-banner p {
+    max-width: 600px;
+    margin: 15px auto 0;
+    color: var(--text);
+}
+
+/* ==========================================
+   CATALOG
+========================================== */
+
+.filter-area {
+    display: grid;
+    grid-template-columns: 2fr 1fr auto;
+    gap: 15px;
+    margin-bottom: 45px;
+}
+
+.filter-area input,
+.filter-area select,
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 17px;
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    background: var(--card);
+    color: var(--text);
+
+    outline: none;
+    transition: 0.3s;
+}
+
+.filter-area input::placeholder,
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #7895AE;
+}
+
+.filter-area input:focus,
+.filter-area select:focus,
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(85, 197, 245, 0.1);
+}
+
+.filter-area select option {
+    background: #0B2541;
+    color: white;
+}
+
+.empty-message {
+    text-align: center;
+    display: none;
+    padding: 40px;
+    color: var(--text);
+}
+
+/* ==========================================
+   MODAL
+========================================== */
+
+.modal {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 8, 22, 0.88);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    z-index: 200;
+
+    backdrop-filter: blur(8px);
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 680px;
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    background: #0B2541;
+    border: 1px solid #245477;
+    border-radius: 14px;
+
+    position: relative;
+
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content img {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+}
+
+.modal-info {
+    padding: 30px;
+}
+
+.modal-info h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.scientific {
+    font-style: italic;
+    margin-bottom: 18px;
+    color: #90AEC8;
+}
+
+.detail-item {
+    margin-top: 18px;
+    color: #B6CBE0;
+}
+
+.detail-item strong {
+    color: #55C5F5;
+}
+
+.close-modal {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+
+    border: none;
+    background: #EAF6FF;
+    color: #071B33;
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.close-modal:hover {
+    background: #55C5F5;
+    transform: rotate(90deg);
+}
+
+/* ==========================================
+   ABOUT
+========================================== */
+
+.about-section {
+    background: var(--background);
+}
+
+.about-grid h2 {
+    color: var(--dark);
+    font-size: 38px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.about-grid p {
+    margin-bottom: 18px;
+}
+
+.benefits {
+    background: #0A2542;
+}
+
+.info-card {
+    padding: 35px 25px;
+    text-align: center;
+}
+
+.info-icon {
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+.info-card h3 {
+    color: var(--dark);
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.info-card p {
+    color: var(--text);
+    font-size: 14px;
+}
+
+/* ==========================================
+   CONTACT
+========================================== */
+
+.contact-form {
+    max-width: 650px;
+    margin: auto;
+
+    background: var(--card);
+    padding: 35px;
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    box-shadow: var(--shadow);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: var(--dark);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.contact-form button {
+    margin-top: 10px;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer {
+    text-align: center;
+    padding: 55px 20px;
+
+    background: #020D1A;
+    color: white;
+
+    border-top: 1px solid #183650;
+}
+
+.footer h3 {
+    color: #55C5F5;
+    font-size: 27px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.footer p {
+    font-size: 13px;
+    margin-top: 7px;
+    color: #91ABC3;
+}
+
+/* ==========================================
+   RESPONSIVE TABLET
+========================================== */
+
+@media (max-width: 900px) {
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .intro-grid,
+    .about-grid {
+        gap: 30px;
+    }
+
+    .filter-area {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .filter-area button {
+        grid-column: span 2;
+    }
+
+    .navbar {
+        padding: 18px 5%;
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE MOBILE
+========================================== */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        padding: 16px 6%;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar nav {
+        display: none;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        background: #071C32;
+
+        padding: 25px;
+
+        flex-direction: column;
+        gap: 20px;
+
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow);
+    }
+
+    .navbar nav.show {
+        display: flex;
+    }
+
+    .hero {
+        min-height: 550px;
+        padding: 70px 7%;
+
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .section {
+        padding: 70px 6%;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+        font-size: 29px;
+    }
+
+    .intro-grid,
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .intro-text h3 {
+        font-size: 27px;
+    }
+
+    .intro-image,
+    .about-grid img {
+        height: 280px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .fish-card img {
+        height: 240px;
+    }
+
+    .filter-area {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-area button {
+        grid-column: auto;
+    }
+
+    .page-banner {
+        padding: 75px 6%;
+    }
+
+    .page-banner h1 {
+        font-size: 32px;
+    }
+
+    .conservation {
+        padding: 70px 7%;
+    }
+
+    .conservation h2 {
+        font-size: 29px;
+    }
+
+    .modal-content img {
+        height: 220px;
+    }
+
+    .modal-info {
+        padding: 22px;
+    }
+
+    .contact-form {
+        padding: 23px;
+    }
+
+    .footer {
+        padding: 40px 15px;
+    }
+}
