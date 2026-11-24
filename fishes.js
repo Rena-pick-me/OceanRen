@@ -9,7 +9,7 @@ const fishes = [
         category: "Terumbu Karang",
         habitat: "Terumbu karang dan anemon laut",
         food: "Plankton dan alga",
-        image: "images/clownfish.jfif",
+        image: "clownfish.jfif",
         description: "Ikan Badut dikenal dengan warna oranye dan garis putih pada tubuhnya. Ikan ini hidup berdampingan dengan anemon laut."
     },
     {
@@ -19,7 +19,7 @@ const fishes = [
         category: "Terumbu Karang",
         habitat: "Terumbu karang tropis",
         food: "Alga",
-        image: "images/blue-tang.jfif",
+        image: "blue-tang.jfif",
         description: "Blue Tang memiliki warna biru cerah dengan corak hitam. Ikan ini banyak ditemukan di kawasan terumbu karang."
     },
     {
@@ -29,7 +29,7 @@ const fishes = [
         category: "Terumbu Karang",
         habitat: "Terumbu karang dan perairan berbatu",
         food: "Ikan kecil dan udang",
-        image: "images/lionfish.jfif",
+        image: "lionfish.jfif",
         description: "Lionfish memiliki sirip panjang menyerupai kipas dan corak garis pada tubuhnya."
     },
     {
@@ -39,7 +39,7 @@ const fishes = [
         category: "Terumbu Karang",
         habitat: "Terumbu karang",
         food: "Alga dan hewan kecil",
-        image: "images/butterflyfish.jfif",
+        image: "butterflyfish.jfif",
         description: "Butterflyfish memiliki bentuk tubuh pipih dan warna yang menarik. Ikan ini sering ditemukan di sekitar terumbu karang."
     },
     {
@@ -49,7 +49,7 @@ const fishes = [
         category: "Terumbu Karang",
         habitat: "Terumbu karang tropis",
         food: "Alga",
-        image: "images/parrotfish.jfif",
+        image: "parrotfish.jfif",
         description: "Parrotfish memiliki bentuk mulut menyerupai paruh. Ikan ini membantu menjaga keseimbangan ekosistem terumbu karang."
     },
     {
@@ -59,7 +59,7 @@ const fishes = [
         category: "Pelagis",
         habitat: "Laut lepas",
         food: "Ikan kecil dan cumi-cumi",
-        image: "images/tuna.jfif",
+        image: "tuna.jfif",
         description: "Tuna merupakan ikan perenang cepat yang hidup di perairan laut terbuka."
     },
     {
@@ -69,7 +69,7 @@ const fishes = [
         category: "Dasar Laut",
         habitat: "Dasar laut dan perairan pesisir",
         food: "Hewan kecil dan krustasea",
-        image: "images/stingray.jfif",
+        image: "stingray.jfif",
         description: "Ikan pari memiliki tubuh pipih dan sirip dada lebar yang menyerupai sayap."
     },
     {
@@ -79,7 +79,7 @@ const fishes = [
         category: "Terumbu Karang",
         habitat: "Terumbu karang tropis",
         food: "Spons dan organisme kecil",
-        image: "images/moorish-idol.jfif",
+        image: "moorish-idol.jfif",
         description: "Moorish Idol memiliki pola warna hitam, putih, dan kuning dengan sirip punggung yang memanjang."
     }
         ,
@@ -90,7 +90,7 @@ const fishes = [
         category: "Terumbu Karang",
         habitat: "Terumbu karang dan perairan dangkal",
         food: "Krustasea kecil dan organisme mikro",
-        image: "images/mandarin-fish.jfif",
+        image: "mandarin-fish.jfif",
         description: "Mandarin Fish memiliki warna tubuh yang sangat cerah dengan perpaduan biru, oranye, dan hijau. Ikan ini banyak ditemukan di kawasan terumbu karang."
     },
     {
@@ -100,7 +100,7 @@ const fishes = [
         category: "Terumbu Karang",
         habitat: "Padang lamun dan terumbu karang",
         food: "Plankton dan udang kecil",
-        image: "images/seahorse.jfif",
+        image: "seahorse.jfif",
         description: "Kuda laut memiliki bentuk tubuh unik dengan kepala menyerupai kuda. Ikan ini berenang dalam posisi tegak."
     },
     {
@@ -110,7 +110,7 @@ const fishes = [
         category: "Terumbu Karang",
         habitat: "Laut tropis dan perairan pesisir",
         food: "Moluska, krustasea, dan organisme kecil",
-        image: "images/pufferfish.jfif",
+        image: "pufferfish.jfif",
         description: "Ikan buntal memiliki kemampuan menggembungkan tubuhnya ketika merasa terancam. Bentuknya yang unik membuat ikan ini mudah dikenali."
     },
     {
@@ -120,7 +120,7 @@ const fishes = [
         category: "Pelagis",
         habitat: "Laut tropis dan subtropis",
         food: "Plankton dan ikan kecil",
-        image: "images/whale-shark.jfif",
+        image: "whale-shark.jfif",
         description: "Hiu paus merupakan spesies ikan terbesar di dunia. Meskipun berukuran sangat besar, ikan ini memakan plankton dan organisme kecil."
     },
     {
@@ -130,7 +130,7 @@ const fishes = [
         category: "Pelagis",
         habitat: "Laut tropis dan perairan lepas",
         food: "Ikan kecil, cumi-cumi, dan pari",
-        image: "images/hammerhead-shark.jfif",
+        image: "hammerhead-shark.jfif",
         description: "Hiu martil memiliki bentuk kepala melebar menyerupai martil. Bentuk kepala tersebut menjadi ciri khas yang membedakannya dari jenis hiu lainnya."
     },
     {
@@ -140,7 +140,7 @@ const fishes = [
         category: "Pelagis",
         habitat: "Laut terbuka dan perairan tropis",
         food: "Plankton dan organisme kecil",
-        image: "images/manta-ray.jfif",
+        image: "manta-ray.jfif",
         description: "Pari manta memiliki tubuh lebar dengan sirip dada menyerupai sayap. Ikan ini dikenal sebagai salah satu ikan pari terbesar di dunia."
     },
     {
@@ -150,7 +150,7 @@ const fishes = [
         category: "Dasar Laut",
         habitat: "Celah batu dan terumbu karang",
         food: "Ikan kecil dan krustasea",
-        image: "images/moray-eel.jfif",
+        image: "moray-eel.jfif",
         description: "Belut moray memiliki tubuh panjang menyerupai ular dan sering bersembunyi di celah-celah batu karang."
     },
     {
@@ -160,7 +160,7 @@ const fishes = [
         category: "Dasar Laut",
         habitat: "Terumbu karang dan dasar laut berbatu",
         food: "Ikan kecil dan krustasea",
-        image: "images/grouper.jfif",
+        image: "grouper.jfif",
         description: "Ikan kerapu memiliki tubuh relatif besar dengan mulut lebar. Ikan ini banyak ditemukan di sekitar terumbu karang."
     },
     {
@@ -170,7 +170,7 @@ const fishes = [
         category: "Pelagis",
         habitat: "Laut lepas",
         food: "Ikan kecil dan cumi-cumi",
-        image: "images/swordfish.jfif",
+        image: "swordfish.jfif",
         description: "Ikan todak memiliki rahang atas yang panjang dan pipih menyerupai pedang. Ikan ini dikenal sebagai perenang cepat."
     },
     {
@@ -180,7 +180,7 @@ const fishes = [
         category: "Pelagis",
         habitat: "Laut terbuka",
         food: "Ubur-ubur dan organisme laut kecil",
-        image: "images/mola-mola.jfif",
+        image: "mola-mola.jfif",
         description: "Mola-mola memiliki bentuk tubuh bulat dan pipih dengan sirip yang unik. Ikan ini dikenal sebagai ikan bertulang sejati yang sangat besar."
     }
         ,
@@ -191,7 +191,7 @@ const fishes = [
         category: "Makhluk Laut Unik",
         habitat: "Laut terbuka dan perairan pesisir",
         food: "Plankton dan organisme kecil",
-        image: "images/jellyfish.jfif",
+        image: "jellyfish.jfif",
         description: "Ubur-ubur memiliki tubuh transparan berbentuk seperti lonceng dan tentakel yang bergerak mengikuti arus air. Hewan ini terlihat indah saat berenang di laut."
     },
     {
@@ -201,7 +201,7 @@ const fishes = [
         category: "Makhluk Laut Unik",
         habitat: "Laut dalam",
         food: "Krustasea kecil dan organisme laut",
-        image: "images/dumbo-octopus.jfif",
+        image: "dumbo-octopus.jfif",
         description: "Dumbo Octopus merupakan gurita laut dalam yang memiliki sirip menyerupai telinga gajah. Bentuknya sangat unik dan menggemaskan."
     },
     {
@@ -211,7 +211,7 @@ const fishes = [
         category: "Makhluk Laut Unik",
         habitat: "Dasar laut dan terumbu karang",
         food: "Spons laut",
-        image: "images/sea-bunny.jfif",
+        image: "sea-bunny.jfif",
         description: "Sea Bunny merupakan siput laut kecil yang memiliki bentuk menyerupai kelinci dengan tonjolan seperti telinga dan tubuh berbulu."
     },
     {
@@ -221,7 +221,7 @@ const fishes = [
         category: "Makhluk Laut Unik",
         habitat: "Permukaan laut terbuka",
         food: "Organisme laut seperti ubur-ubur",
-        image: "images/blue-dragon.jfif",
+        image: "blue-dragon.jfif",
         description: "Blue Dragon merupakan siput laut berwarna biru dengan bentuk tubuh menyerupai naga kecil. Warnanya sangat mencolok dan indah."
     },
     {
@@ -231,7 +231,7 @@ const fishes = [
         category: "Mamalia Laut",
         habitat: "Perairan dingin dan pesisir",
         food: "Ikan dan cumi-cumi",
-        image: "images/seal.jfif",
+        image: "seal.jfif",
         description: "Anjing laut merupakan mamalia laut dengan tubuh membulat dan sirip yang membantunya berenang. Hewan ini juga dikenal pandai bergerak di dalam air."
     },
     {
@@ -241,7 +241,7 @@ const fishes = [
         category: "Mamalia Laut",
         habitat: "Perairan pesisir Pasifik Utara",
         food: "Kerang, kepiting, dan hewan laut kecil",
-        image: "images/sea-otter.jfif",
+        image: "sea-otter.jfif",
         description: "Berang-berang laut memiliki bulu yang tebal dan sering terlihat mengapung di permukaan laut. Hewan ini dikenal suka menggunakan batu untuk membuka makanan."
     },
     {
@@ -251,7 +251,7 @@ const fishes = [
         category: "Terumbu Karang",
         habitat: "Terumbu karang tropis",
         food: "Alga dan organisme kecil",
-        image: "images/yellow-boxfish.jfif",
+        image: "yellow-boxfish.jfif",
         description: "Yellow Boxfish memiliki bentuk tubuh menyerupai kotak dengan warna kuning cerah dan bintik-bintik hitam."
     },
     {
@@ -261,7 +261,7 @@ const fishes = [
         category: "Makhluk Laut Unik",
         habitat: "Dasar laut dan perairan pesisir",
         food: "Udang dan ikan kecil",
-        image: "images/cuttlefish.jfif",
+        image: "cuttlefish.jfif",
         description: "Sotong merupakan hewan laut yang memiliki kemampuan mengubah warna dan pola tubuhnya untuk berkomunikasi serta berkamuflase."
     },
     {
@@ -271,7 +271,7 @@ const fishes = [
         category: "Makhluk Laut Unik",
         habitat: "Dasar laut berpasir",
         food: "Plankton",
-        image: "images/garden-eel.jfif",
+        image: "garden-eel.jfif",
         description: "Garden Eel memiliki tubuh panjang dan tipis. Hewan ini sering muncul dari lubang pasir dan bergerak mengikuti arus air."
     },
     {
@@ -281,7 +281,7 @@ const fishes = [
         category: "Makhluk Laut Unik",
         habitat: "Perairan pesisir Australia Selatan",
         food: "Udang kecil dan plankton",
-        image: "images/leafy-seadragon.jfif",
+        image: "leafy-seadragon.jfif",
         description: "Leafy Seadragon memiliki bentuk tubuh menyerupai naga dengan bagian tubuh menyerupai daun. Bentuk tersebut membantunya berkamuflase di antara rumput laut."
     }
     
