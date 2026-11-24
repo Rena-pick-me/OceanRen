@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RenOcean | Explore Marine Life</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">Ren<span>Ocean</span></a>
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <nav id="navMenu">
+        <a href="index.html" class="active">Home</a>
+        <a href="marine-life.html">Jenis Ikan</a>
+        <a href="about.html">About</a>
+        <button id="themeToggle" class="theme-btn">🌙</button>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <span class="eyebrow">WELCOME TO OCEANPEDIA</span>
+            <h1>Explore The Beauty Of Marine Life</h1>
+            <p>
+                Kenali berbagai jenis kehidupan laut dan temukan
+                keindahan ekosistem bawah laut bersama Oceanpedia.
+            </p>
+            <a href="marine-life.html" class="btn-primary">
+                Jelajahi Sekarang
+            </a>
+        </div>
+    </section>
+
+    <section class="section intro">
+        <div class="section-heading">
+            <span class="eyebrow">DISCOVER THE OCEAN</span>
+            <h2>Mengenal Kehidupan Laut</h2>
+            <p>
+                Laut merupakan ekosistem yang memiliki berbagai
+                jenis makhluk hidup dengan karakteristik unik.
+            </p>
+        </div>
+
+        <div class="intro-grid">
+            <div class="intro-text">
+                <h3>Keindahan Dunia Bawah Laut</h3>
+                <p>
+                    Oceanpedia adalah website edukasi yang
+                    memperkenalkan berbagai jenis ikan laut,
+                    habitat, makanan, dan karakteristiknya.
+                </p>
+                <p>
+                    Melalui website ini, pengunjung dapat
+                    mempelajari keanekaragaman hayati laut
+                    dengan cara yang sederhana dan menarik.
+                </p>
+                <a href="about.html" class="btn-secondary">
+                    Tentang Kami
+                </a>
+            </div>
+
+            <img src="images/coral1.jfif"
+                 alt="Ekosistem terumbu karang"
+                 class="intro-image">
+        </div>
+    </section>
+
+    <section class="section featured">
+        <div class="section-heading">
+            <span class="eyebrow">FEATURED SPECIES</span>
+            <h2>Ikan Pilihan</h2>
+            <p>Kenali beberapa spesies ikan yang menarik.</p>
+        </div>
+
+        <div class="card-grid">
+            <article class="fish-card">
+                <img src="images/clownfish.jfif" alt="Ikan Badut">
+                <div class="fish-info">
+                    <span class="fish-category">Terumbu Karang</span>
+                    <h3>Ikan Badut</h3>
+                    <p>Amphiprion ocellaris</p>
+                </div>
+            </article>
+
+            <article class="fish-card">
+                <img src="images/blue-tang.jfif" alt="Blue Tang">
+                <div class="fish-info">
+                    <span class="fish-category">Terumbu Karang</span>
+                    <h3>Blue Tang</h3>
+                    <p>Paracanthurus hepatus</p>
+                </div>
+            </article>
+
+            <article class="fish-card">
+                <img src="images/butterflyfish.jfif" alt="Butterflyfish">
+                <div class="fish-info">
+                    <span class="fish-category">Terumbu Karang</span>
+                    <h3>Butterflyfish</h3>
+                    <p>Chaetodon</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="center">
+            <a href="marine-life.html" class="btn-primary">
+                Lihat Semua Ikan
+            </a>
+        </div>
+    </section>
+
+    <section class="conservation">
+        <div>
+            <span class="eyebrow">SAVE OUR OCEAN</span>
+            <h2>Jaga Laut, Jaga Kehidupan</h2>
+            <p>
+                Terumbu karang merupakan habitat penting bagi
+                berbagai jenis kehidupan laut. Mari menjaga
+                kebersihan laut dan melestarikan ekosistemnya.
+            </p>
+            <a href="about.html" class="btn-light">Pelajari Lebih Lanjut</a>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <h3>Oceanpedia</h3>
+    <p>Explore The Beauty Of Marine Life</p>
+    <p>© 2026 Oceanpedia. Educational Website.</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
