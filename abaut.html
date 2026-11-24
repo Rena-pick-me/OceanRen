@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Oceanpedia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">Ren<span>Ocean</span></a>
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="marine-life.html">Jenis Ikan</a>
+        <a href="about.html" class="active">About</a>
+        <button id="themeToggle" class="theme-btn">🌙</button>
+    </nav>
+</header>
+
+<main>
+    <section class="page-banner">
+        <span class="eyebrow">ABOUT OCEANPEDIA</span>
+        <h1>Mengenal Oceanpedia</h1>
+        <p>Media pembelajaran sederhana tentang kehidupan laut.</p>
+    </section>
+
+    <section class="section about-section">
+        <div class="about-grid">
+            <div>
+                <span class="eyebrow">WHO WE ARE</span>
+                <h2>Tentang Website Kami</h2>
+                <p>
+                    Oceanpedia merupakan website edukasi yang
+                    memberikan informasi mengenai berbagai
+                    jenis ikan dan ekosistem laut.
+                </p>
+                <p>
+                    Website ini dibuat untuk membantu pengunjung
+                    mengenal keanekaragaman hayati laut melalui
+                    informasi yang mudah dipahami.
+                </p>
+            </div>
+
+            <img src="images/coral.jfif"
+                 alt="Keindahan ekosistem laut">
+        </div>
+    </section>
+
+    <section class="section benefits">
+        <div class="section-heading">
+            <span class="eyebrow">OUR PURPOSE</span>
+            <h2>Tujuan Oceanpedia</h2>
+        </div>
+
+        <div class="card-grid">
+            <div class="info-card">
+                <div class="info-icon">🐠</div>
+                <h3>Edukasi</h3>
+                <p>Memberikan informasi mengenai berbagai jenis ikan laut.</p>
+            </div>
+
+            <div class="info-card">
+                <div class="info-icon">🌊</div>
+                <h3>Pengetahuan</h3>
+                <p>Mengenalkan habitat dan karakteristik kehidupan laut.</p>
+            </div>
+
+            <div class="info-card">
+                <div class="info-icon">🪸</div>
+                <h3>Konservasi</h3>
+                <p>Meningkatkan kepedulian terhadap kelestarian ekosistem laut.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact-section">
+        <div class="section-heading">
+            <span class="eyebrow">CONTACT US</span>
+            <h2>Hubungi Kami</h2>
+            <p>Kirim pesan melalui formulir berikut.</p>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+            <label for="contactName">Nama</label>
+            <input type="text" id="contactName"
+                   placeholder="Masukkan nama" required>
+
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail"
+                   placeholder="Masukkan email" required>
+
+            <label for="contactMessage">Pesan</label>
+            <textarea id="contactMessage"
+                      placeholder="Tulis pesan kamu..."
+                      rows="5" required></textarea>
+
+            <button type="submit" class="btn-primary">
+                Kirim Pesan
+            </button>
+        </form>
+    </section>
+</main>
+
+<footer class="footer">
+    <h3>Oceanpedia</h3>
+    <p>Explore The Beauty Of Marine Life</p>
+    <p>© 2026 Oceanpedia. Educational Website.</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
