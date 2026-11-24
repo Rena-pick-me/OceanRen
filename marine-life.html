@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenis Ikan | Oceanpedia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">Ren<span>Ocean</span></a>
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="marine-life.html" class="active">Jenis Ikan</a>
+        <a href="about.html">About</a>
+        <button id="themeToggle" class="theme-btn">🌙</button>
+    </nav>
+</header>
+
+<main>
+    <section class="page-banner">
+        <span class="eyebrow">MARINE SPECIES</span>
+        <h1>Jelajahi Jenis Ikan</h1>
+        <p>
+            Temukan berbagai spesies ikan beserta informasi
+            habitat dan karakteristiknya.
+        </p>
+    </section>
+
+    <section class="section catalog">
+        <div class="section-heading">
+            <h2>Katalog Kehidupan Laut</h2>
+            <p>Gunakan pencarian dan kategori untuk menemukan ikan.</p>
+        </div>
+
+        <div class="filter-area">
+            <input type="text" id="searchFish"
+                   placeholder="Cari nama ikan...">
+
+            <select id="categoryFilter">
+                <option value="all">Semua Kategori</option>
+                <option value="Terumbu Karang">Terumbu Karang</option>
+                <option value="Pelagis">Pelagis</option>
+                <option value="Dasar Laut">Dasar Laut</option>
+            </select>
+
+            <button id="favoriteFilter" class="btn-secondary">
+                ♡ Favorit Saya
+            </button>
+        </div>
+
+        <div id="fishContainer" class="card-grid"></div>
+
+        <p id="emptyMessage" class="empty-message">
+            Ikan tidak ditemukan.
+        </p>
+    </section>
+
+    <div class="modal" id="fishModal">
+        <div class="modal-content">
+            <button id="closeModal" class="close-modal">×</button>
+
+            <img id="modalImage" src="" alt="Foto ikan">
+
+            <div class="modal-info">
+                <span class="eyebrow">FISH INFORMATION</span>
+                <h2 id="modalName"></h2>
+                <p id="modalScientific" class="scientific"></p>
+
+                <div class="detail-item">
+                    <strong>Habitat</strong>
+                    <p id="modalHabitat"></p>
+                </div>
+
+                <div class="detail-item">
+                    <strong>Makanan</strong>
+                    <p id="modalFood"></p>
+                </div>
+
+                <div class="detail-item">
+                    <strong>Deskripsi</strong>
+                    <p id="modalDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <h3>Oceanpedia</h3>
+    <p>Explore The Beauty Of Marine Life</p>
+    <p>© 2026 Oceanpedia. Educational Website.</p>
+</footer>
+
+<script src="main.js"></script>
+<script src="fishes.js"></script>
+</body>
+</html>
